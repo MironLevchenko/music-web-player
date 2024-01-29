@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Удобный плеер для вашего использования">
+    <meta name="keywords" content="Музыка, музыка,Плеер,плеер">
+    <meta name="author" content="Гюнайтед">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"type="text/css" href="style\mainStylePage\LoadingScreen.css" id="stylelink">
+    <link rel="stylesheet" href="style\mainStylePage\style__twopage.css">
+    <title>Меню нашей страницы</title>
+</head>
+<body>
+    <div class="preloader">
+        <div class="preloader__row">
+          <div class="preloader__item"></div>
+          <div class="preloader__item"></div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <header class="header">
+            <!-- Настройки переход -->
+            <button class="header__button"><a href="setings.html"><img src="mainPageIcons\setting\settings.svg" alt="Settings"></a></button>
+            <!-- Поиск по названиям музыки -->
+            <button class="header__button"><a href="index.html"><img src="mainPageIcons\setting\search.svg" alt="search"></a></button>
+        </header>
+        <main class="main">
+                <div class="main_settings">
+                    <!-- Лого с сердечком -->
+                        <div class="img_block">
+                            <img src="mainPageIcons\setting\MymusicAvatar.svg">
+                        </div>
+                </div>
+                <!-- Элементы формы для перехода на другие страницы -->
+                <div class="list--setings">
+                    <!-- Треки пользователя -->
+                    <div class="options" id="trecks">  
+                        <div class="img__text">
+                            <img  src="mainPageIcons\setting\MusicBlack.svg"> 
+                            <p class="setting_text" >Треки</p>
+                        </div>
+                        <img class="arrow" src="mainPageIcons\setting\BlackVector.svg"> 
+                    </div>
+                    <!-- Исполнители -->
+                    <a href="artists.html">
+                        <div class="options">  
+                            <div class="img__text">
+                                <img  src="mainPageIcons\setting\GroupBlack.svg"> 
+                                <p class="setting_text" >Исполнители</p>
+                            </div>
+                            <img class="arrow" src="mainPageIcons\setting\BlackVector.svg"> 
+                        </div>
+                    </a>
+                    <!-- Скачанная музыка -->
+                    <div class="options" id="down">  
+                        <div class="img__text">
+                            <img  src="mainPageIcons\setting\DownloadBlack.svg"> 
+                            <p class="setting_text" >Скачанные треки</p>
+                        </div>
+                        <img class="arrow" src="mainPageIcons\setting\BlackVector.svg"> 
+                    </div>
+                    <!-- Плейлисты -->
+                    <a href="playlist.html">
+                        <div class="options">
+                            <div class="img__text">
+                                <img  src="mainPageIcons\setting\AlbomsBlack.svg"> 
+                                <p class="setting_text" >Плейлисты</p>
+                            </div>
+                            <img class="arrow" src="mainPageIcons\setting\BlackVector.svg"> 
+                        </div>
+                    </a>
+                    <!-- Альбомы -->
+                    <div class="options_out" id="alboms">  
+                        <div class="img__text">
+                            <img  src="mainPageIcons\setting\PlayListBlack.svg"> 
+                            <p class="setting_text_out" >Альбомы</p>
+                        </div>
+                        <img class="arrow" src="mainPageIcons\setting\BlackVector.svg"> 
+                    </div>
+                </div>
+            
+        </main>
+        <!-- Кнопки домой, шазам, моя музыка -->
+        <footer class="footer">
+            <button class="footer__buton"><a href="main.html"><img src="mainPageIcons\setting\home.svg" alt=""></a></button>
+            <button class="footer__buton music--button"><img src="mainPageIcons\setting\Player.svg" alt=""></button>
+            <button class="footer__buton"><a href="two__page.html"><img src="mainPageIcons\setting\MyMusic.svg" alt=""></a></button>
+        </footer>
+    </div>
+</body>
+<script src="script\mainPageScript\GenerateLoad.js"></script>
+<script src="script\mainPageScript\openPageMytarck.js"></script>
+</html>

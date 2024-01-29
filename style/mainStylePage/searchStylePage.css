@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+:root{
+    --background: #ffffff;
+    --buttons: #FFFFFF80;
+    --footer: #FFFFFFB2;
+
+}
+html{
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+}
+body {
+    background-color: var(--background);
+}
+#header__button{
+    margin-right: 2%;
+    border: 0;
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: var(--buttons);
+    box-shadow: 8px 0px 25px 0px #1C3C4559;
+    transition: 0.3s;
+    cursor: pointer;
+}
+#header__button:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+nav {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+main {
+    position: relative;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main article {
+    width: calc(100% / 0 - 1px);
+    border-radius: 3px;
+    overflow: hidden;
+    margin-bottom: 25px;
+    background: #ffffff;
+}
+
+main article img {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    border-radius: 5%;
+}
+main article p,
+main article h4{
+    width: 100px;
+    white-space: nowrap; /* Отменяем перенос текста */
+    overflow: hidden; /* Обрезаем содержимое */
+    text-overflow: ellipsis; /* Многоточие */
+}
+main article p:hover,
+main article h4:hover{
+    white-space: normal; /* Обычный перенос текста */
+}
+
+main article audio {
+    width: 100%;
+}
+.songs{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+#Header__search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#searchTerm{
+    box-shadow: 2px 6px 15px 5px rgba(114, 114, 114, 0.733);
+    height: 43px;
+    border-top: 0px;
+    border-right: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    border-radius: 5px;
+    padding-right: 5%;
+    padding-left: 5%;
+    margin-left: 10%;
+    width: 65%;
+    background-color: var(--footer);
+}
+.footer{
+    box-shadow: inset 0px 0px 5px 5px rgb(102 100 100 / 71%);
+    left: 50%;
+    border-radius: 8px;
+    transform: translate(-50%);
+    width: 95%;
+    height: 66px;
+    background-color: var(--footer);
+    position: fixed;
+    bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 80px;
+}
+.footer__buton{
+    cursor: pointer;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0);
+}
+.music--button{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    animation: 5s linear infinite rotating;
+}
+@keyframes rotating{
+    0% {
+        transform: rotate(0deg);
+      }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.songs{
+    margin-top: 0px;
+}
+.image{
+    height: 90px;
+    width: 80px;
+    border-radius: 20%;
+}
+.article{
+    /* padding-left: 50px; */
+    /* margin-top: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-top: 1px solid rgb(153, 153, 153);    
+    /* border-bottom: 1px solid black;     */
+}
+
+.nameMusic{
+    /* margin-right: 20px; */
+    width: 90%;
+}
+main article audio {
+    width: 100%;
+}
+.article:hover{
+    transform: scale(1.03);
+    transition: 0.2s;
+    background-color: var(--outColor);
+    border-bottom: 1px solid rgb(156, 156, 156);
+}
+#songs{
+    padding-top: 0px;
+}
+main article p,
+main article h4{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-left: 30px;
+    width: 300px;
+    white-space: nowrap; /* Отменяем перенос текста */
+    overflow: hidden; /* Обрезаем содержимое */
+    text-overflow: ellipsis; /* Многоточие */
+}
+main article p:hover,
+main article h4:hover{
+    width: 90%;
+    white-space: normal; /* Обычный перенос текста */
+}
+audio::-webkit-media-controls-play-button,
+    audio::-webkit-media-controls-panel {
+    background-color: #ffffff;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>поиск</title>
+    <link rel="stylesheet"type="text/css" href="style\mainStylePage\LoadingScreen.css" id="stylelink">
+    <link rel="stylesheet" href="style\mainStylePage\searchStylePage.css">
+</head>
+<body>
+    <div class="preloader">
+        <div class="preloader__row">
+          <div class="preloader__item"></div>
+          <div class="preloader__item"></div>
+        </div>
+    </div>
+    <!-- контейнер ввода музыки -->
+    <nav>
+        <p>Поиск музыки</p>
+        <div id="Header__search">
+            <input type="text" id="searchTerm">
+            <!-- Поиск по названиям музыки -->
+            <button id="header__button"><img src="mainPageIcons\setting\search.svg" alt="search"></button>
+        </div>
+    </nav>
+    <hr>
+    <!-- вывод музыки -->
+    <main type="range" id="songs"></main>
+        <!-- Кнопки домой, шазам, моя музыка -->
+        <footer class="footer">
+            <button class="footer__buton"><a href="main.html"><img src="mainPageIcons\setting\home.svg" alt=""></a></button>
+            <button class="footer__buton music--button"><img src="mainPageIcons\setting\Player.svg" alt=""></button>
+            <button class="footer__buton"><a href="two__page.html"><img src="mainPageIcons\setting\MymusicWhite.svg" alt=""></a></button>
+        </footer>
+</body>
+<script src="script\mainPageScript\GenerateLoad.js"></script>
+<script src="script\mainPageScript\oneTreck.js"></script>
+<script src="script\mainPageScript\scriptSearch.js"></script>
+</html>

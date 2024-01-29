@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"type="text/css" href="style\mainStylePage\LoadingScreen.css" id="stylelink">
+    <link rel="stylesheet" href="style\myMusicChildPages\playlist.css">
+    <title>Альбомы</title>
+</head>
+<body>
+    <div class="preloader">
+        <div class="preloader__row">
+          <div class="preloader__item"></div>
+          <div class="preloader__item"></div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <header class="header">
+            <!-- Настройки переход -->
+            <button class="header__button"><a href="setings.html"><img src="mainPageIcons\setting\settings.svg" alt="Settings"></a></button>
+            <!-- Поиск по названиям музыки -->
+            <button class="header__button"><a href="index.html"><img src="mainPageIcons\setting\search.svg" alt="search"></a></button>
+        </header>
+        <main class="main">
+            <!-- заглавная иконка плейлистов -->
+                <div class="main_settings">
+                   <div class="upper_titles">
+                    <p class="title__name">Наша подборка из плейлистов для вас</p>
+                </div>
+                </div>
+                <div class="main__playlist">
+                    <div class="playlist__list">
+                        <!-- плейлист вечеринка -->
+                        <div class="playlist__img" id="Party">
+                            <img src="mainPageIcons\play__list\playlist_2012.svg">
+                            <div class="playlist__names">
+                                <div class="playlist__title"> Вечеринка</div>
+                                <div class="playlist__under__title"> 10 трэков</div>
+                            </div>
+                        </div>
+                        <!-- плейлист весна -->
+                        <div class="playlist__img" id="spring">
+                            <img src="mainPageIcons\play__list\playlist_2011.svg">
+                            <div class="playlist__names">
+                                <div class="playlist__title"> Весна</div>
+                                <div class="playlist__under__title"> 10 трэков</div>
+                            </div>
+                        </div>
+                        <!-- плейлист потанцевать -->
+                        <div class="playlist__img" id="dance">
+                            <img src="mainPageIcons\play__list\playlist_2014.svg">
+                            <div class="playlist__names">
+                                <div class="playlist__title"> Потанцевать</div>
+                                <div class="playlist__under__title"> 10 трэков</div>
+                            </div>
+                        </div>
+                        <!-- плейлист выходные -->
+                        <div class="playlist__img" id="weekends">
+                            <img src="mainPageIcons\play__list\playlist_2013.svg">
+                            <div class="playlist__names">
+                                <div class="playlist__title"> Выходные</div>
+                                <div class="playlist__under__title"> 10 трэков</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </main>
+        <!-- Кнопки домой, шазам, моя музыка -->
+        <footer class="footer">
+            <button class="footer__buton"><a href="main.html"><img src="mainPageIcons\setting\home.svg" alt="На главный экран"></a></button>
+            <button class="footer__buton music--button"><img src="mainPageIcons\setting\Player.svg" alt="Пластинка"></button>
+            <button class="footer__buton"><a href="two__page.html"><img src="mainPageIcons\setting\MymusicWhite.svg" alt="Моя музыка"></a></button>
+        </footer>
+    </div>
+</body>
+<script src="script\mainPageScript\GenerateLoad.js"></script>
+<script src="script\mainPageScript\oneTreck.js"></script>
+<script src="script\mainPageScript\Playlist.js"></script>
+</html>

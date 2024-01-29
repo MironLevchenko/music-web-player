@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"type="text/css" href="style\mainStylePage\LoadingScreen.css" id="stylelink">
+    <link rel="stylesheet" href="style\myMusicChildPages\artists.css">
+    <title>Плейлисты</title>
+</head>
+<body>
+    <div class="preloader">
+        <div class="preloader__row">
+            <div class="preloader__item"></div>
+            <div class="preloader__item"></div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <header class="header">
+            <!-- Настройки переход -->
+            <button class="header__button"><a href="setings.html"><img src="mainPageIcons\setting\settings.svg" alt="Settings"></a></button>
+            <!-- Поиск по названиям музыки -->
+            <button class="header__button"><a href="index.html"><img src="mainPageIcons\setting\search.svg" alt="search"></a></button>
+        </header>
+        <main class="main">
+            <!-- заголвок исполнителей -->
+                <div class="main_settings">
+                    <div class="upper_titles">
+                        <p class="title__name">Исполнители</p>
+                    </div>
+                </div>
+                <div class="main__playlist">
+                    <div class="playlist__list">
+                        <!-- плейлист басты -->
+                        <div class="playlist__img" id="basta">
+                            <img src="mainPageIcons\alboms\Basta.svg">
+                            <div class="playlist__names">
+                                <div class="playlist__title"> Баста</div>
+                                <div class="playlist__under__title"> 126 трэков</div>
+                            </div>
+                        </div>
+                        <!-- плейлист Сергея Лазарева -->
+                        <div class="playlist__img" id="SerLaz">
+                            <img src="mainPageIcons\alboms\Lazarev.svg">
+                            <div class="playlist__names">
+                                <div class="playlist__title"> Сергей<br>Лазарев </div>
+                                <div class="playlist__under__title"> 54 трэков</div>
+                            </div>
+                        </div>
+                        <!-- плейлист максим  -->
+                        <div class="playlist__img" id="maks">
+                            <img src="mainPageIcons\alboms\Macsim.svg">
+                            <div class="playlist__names">
+                                <div class="playlist__title"> MaкSиm</div>
+                                <div class="playlist__under__title"> 65  трэков</div>
+                            </div>
+                        </div>
+                        <!-- плейлист Григория Лепса -->
+                        <div class="playlist__img" id="leps">
+                            <img src="mainPageIcons\alboms\Leps.svg">
+                            <div class="playlist__names">
+                                <div class="playlist__title"> Григорий<br>Лепс</div>
+                                <div class="playlist__under__title"> 77 трэков</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+        </main>
+        <!-- Кнопки домой, шазам, моя музыка -->
+        <footer class="footer">
+            <button class="footer__buton"><a href="main.html"><img src="mainPageIcons\setting\home.svg" alt=""></a></button>
+            <button class="footer__buton music--button"><img src="mainPageIcons\setting\Player.svg" alt=""></button>
+            <button class="footer__buton"><a href="two__page.html"><img src="mainPageIcons\setting\MymusicWhite.svg" alt=""></a></button>
+        </footer>
+    </div>
+</body>
+<script src="script\mainPageScript\GenerateLoad.js"></script>
+<script src="script\mainPageScript\ArtistAlboms.js"></script>
+</html>

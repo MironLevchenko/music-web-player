@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"type="text/css" href="style\mainStylePage\LoadingScreen.css" id="stylelink">
+    <link rel="stylesheet" href="style\settingChildPages\notaficationsPage.css">
+    <title>Настройки уведомлений.</title>
+</head>
+<body>
+    <div class="preloader">
+        <div class="preloader__row">
+          <div class="preloader__item"></div>
+          <div class="preloader__item"></div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <!-- Главные кнопки натройки и поиска -->
+        <header class="header">
+            <button class="header__button"><a href="setings.html"><img src="mainPageIcons\setting\expand_more.svg" alt="на страницу ваша музыка"></a></button>
+            <p class="main__title">Настройки уведомлений</p>
+        </header>
+        <!-- Тело приложения -->
+        <main class="main">
+            <div class="list--setings">
+                <div class="options_out" id="Theme">  
+                    <div class="img__text">
+                        <p class="setting_text_out"style="font-size:18px;">Скрытые</p>
+                    </div>
+                    <!-- <img class="arrow" src="mainPageIcons\setting\BlackVector.svg">  -->
+                    <div class="switch">
+                        <input type="checkbox" onclick="" class="checkbox">
+                    </div>
+                </div>
+                <div class="options_out" id="Theme">  
+                    <div class="img__text">
+                        <p class="setting_text_out" style="font-size:18px;">Сообщения</p>
+                    </div>
+                    <!-- <img class="arrow" src="mainPageIcons\setting\BlackVector.svg">  -->
+                    <div class="switch">
+                        <input type="checkbox" onclick="" class="checkbox">
+                    </div>
+                </div>
+                <div class="options_out" id="Theme">  
+                    <div class="img__text"> 
+                        <p class="setting_text_out" style="font-size:18px;">Обратная связь</p>
+                    </div>
+                    <!-- <img class="arrow" src="mainPageIcons\setting\BlackVector.svg">  -->
+                    <div class="switch">
+                        <input type="checkbox" onclick="" class="checkbox">
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+<script src="script\mainPageScript\GenerateLoad.js"></script>
+</html>

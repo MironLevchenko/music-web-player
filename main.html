@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style\mainStylePage\LoadingScreen.css">
+    <link rel="stylesheet" href="style\mainStylePage\main.css">
+    <title>Домашняя страница</title>
+</head>
+<body>
+    <div class="preloader">
+        <div class="preloader__row">
+          <div class="preloader__item"></div>
+          <div class="preloader__item"></div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <!-- Главные кнопки натройки и поиска -->
+        <header class="header">
+            <!-- Настройки переход -->
+            <button class="header__button"><a href="setings.html"><img src="mainPageIcons\setting\settings.svg" alt="Settings"></a></button>
+            <!-- Поиск по названиям музыки -->
+            <button class="header__button"><a href="index.html"><img src="mainPageIcons\setting\search.svg" alt="search"></a></button>
+        </header>
+        <!-- Тело приложения -->
+        <main class="main">
+            <div class="main__trends--block">
+                <p class="main__title">В тренде</p>
+                <!-- блок отключенный  пока нет скрипта по API -->
+                <div class="main__trend--block">
+                    <!-- <div class="main__trend--card"><img src="main page images/Rectangle 10.png" alt=""></div>
+                    <div class="main__trend--card"><img src="main page images/Rectangle 10.png" alt=""></div>
+                    <div class="main__trend--card"><img src="main page images/Rectangle 10.png" alt=""></div>
+                    <div class="main__trend--card"><img src="main page images/Rectangle 10.png" alt=""></div> -->
+                </div>
+            </div>
+        </main>
+        <!-- Кнопки домой, шазам, моя музыка -->
+        <footer class="footer">
+            <button class="footer__buton"><a href="main.html"><img src="mainPageIcons\setting\HomeBlack.svg" alt=""></a></button>
+            <button class="footer__buton music--button"><img src="mainPageIcons\setting\Player.svg" alt=""></button>
+            <button class="footer__buton"><a href="two__page.html"><img src="mainPageIcons\setting\MymusicWhite.svg" alt=""></a></button>
+        </footer>
+    </div>
+</body>
+<!-- Скрипт с API -->
+<script src="script\mainPageScript\GenerateLoad.js"></script>
+<script src="script\mainPageScript\oneTreck.js"></script>
+<script src="script\mainPageScript\goToThePage.js"></script>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"type="text/css" href="style\mainStylePage\LoadingScreen.css" id="stylelink">
+    <link rel="stylesheet"type="text/css" href="style\mainStylePage\setings.css" id="stylelink">
+    <title>Настройки</title>
+</head>
+<body>
+    <div class="preloader">
+        <div class="preloader__row">
+          <div class="preloader__item"></div>
+          <div class="preloader__item"></div>
+        </div>
+    </div>
+    <div id="AutoplayPage"></div>
+    <div id="IFAccaunt"></div>
+    <div id="NotificationsPage"></div>
+    <div class="wrapper">
+        <header class="header">
+            <!-- Поиск по названиям музыки -->
+            <button class="header__button"><a href="two__page.html"><img src="mainPageIcons\setting\expand_more.svg" alt="на страницу ваша музыка"></a></button>
+        </header>
+        <main class="main">
+            <!-- Блок настроек -->
+                <div class="main_settings">
+                    <div class="upper_titles">
+                        <div class="img_block">
+                            <img src="mainPageIcons\setting\setting.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="list--setings">
+                    <!-- Блок настроек аккаунт  -->
+                    <div class="options_out" id="autoplay">  
+                        <div class="img__text">
+                            <img  src="mainPageIcons\setting\AlbomsBlack.svg"> 
+                            <p class="setting_text" >Автовоспроизведение</p>
+                        </div>
+                        <!-- <img class="arrow" src="mainPageIcons\setting\BlackVector.svg">  -->
+                        <div class="switch">
+                            <input type="checkbox" onclick="" class="checkbox">
+                        </div>
+                    </div>
+                    <!-- Блок пробела -->
+                    <div class="options2">  
+                        <div class="img__text2">
+                        </div>
+                    </div>
+                    <!-- Блок настроек уведомления -->
+                    <div class="options" id="InformationForAccaunt">  
+                        <div class="img__text">
+                            <img  src="mainPageIcons\setting\AlbomsBlack.svg"> 
+                            <p class="setting_text" >Информация о аккаунте</p>
+                        </div>
+                        <img class="arrow" src="mainPageIcons\setting\BlackVector.svg"> 
+                    </div>
+                    <!-- Блок настроек уведомления -->
+                    <div class="options" id="Notifications">  
+                        <div class="img__text">
+                            <img  src="mainPageIcons\setting\AlbomsBlack.svg"> 
+                            <p class="setting_text" >Уведомления</p>
+                        </div>
+                        <img class="arrow" src="mainPageIcons\setting\BlackVector.svg"> 
+                    </div>
+                    <!-- Блок настроек сменить тему -->
+                    <div class="options_out">  
+                        <div class="img__text">
+                            <img  src="mainPageIcons\setting\AlbomsBlack.svg"> 
+                            <p class="setting_text_out" >Тема</p>
+                        </div>
+                        <!-- <img class="arrow" src="mainPageIcons\setting\BlackVector.svg">  -->
+                        <div class="switch">
+                            <!-- Скрипт подключен но закоммичен -->
+                            <input type="checkbox" onclick="myStyle()" class="checkbox">
+                        </div>
+                    </div>
+                </div>          
+        </main>
+    </div>
+</body>
+<script src="script\mainPageScript\GenerateLoad.js"></script>
+<script src="script\mainPageScript\oneTreck.js"></script>
+<script src="script\mainPageScript\openPageSettings.js"></script>
+</html>
